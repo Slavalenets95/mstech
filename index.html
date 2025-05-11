@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSTECH</title>
+    <link rel="icon" href="/public/favicon.png" />
+  </head>
+
+  <body>
+    <div class="global-wrapper">
+      <!-- Header -->
+      <header class="header white" id="header">
+        <div class="header-container">
+          <div class="header-logo">
+            <a class="header-logo__link d-flex" href="/">
+              <img class="header-logo__img" src="<%= img %>/header-logo.svg" alt="company logo">
+            </a>
+          </div>
+          <nav class="header-nav">
+            <ul class="header-nav__list d-flex">
+              <li class="header-nav__list-item">
+                <a href="#" class="header-nav__list-link">consectetur</a>
+              </li>
+              <li class="header-nav__list-item">
+                <a href="#" class="header-nav__list-link">sit amet</a>
+              </li>
+              <li class="header-nav__list-item">
+                <a href="#" class="header-nav__list-link">eiusmod tempor</a>
+              </li>
+            </ul>
+            <button class="header-close__btn" type="button" aria-label="close mobile menu">
+              <span></span>
+              <span></span>
+            </button>
+          </nav>
+          <div class="header-controls">
+            <button class="header-controls__btn" type="button" aria-label="open mobile menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- End header -->
+
+      <!-- Intro -->
+      <section class="intro d-flex">
+        <div class="intro-content secondary-font white">
+          <h1 class="intro-content__title title-80">Lorem ipsum <br /> dolor sit amet</h1>
+          <p class="intro__sub-title title-50 main-font">sed do eiusmod tempor</p>
+          <ul class="intro-list d-flex">
+            <li class="intro-list__item">
+              <span class="intro-list__item-small">do</span>
+              <span class="intro-list__item-large">$10 000</span>
+              <span class="intro-list__item-small">consectetur elit</span>
+            </li>
+            <li class="intro-list__item">
+              <span class="intro-list__item-large">30%</span>
+              <span class="intro-list__item-small">sed do eiusmod tempor </span>
+            </li>
+            <li class="intro-list__item">
+              <span class="intro-list__item-small">do</span>
+              <span class="intro-list__item-large">17%</span>
+              <span class="intro-list__item-small">adipiscing elit sed do</span>
+            </li>
+          </ul>
+          <a href="#feedback" class="intro-order main-font white-btn--hover">
+            <span>Order</span>
+          </a>
+        </div>
+        <div class="intro-visual d-flex">
+          <img src="<%= img %>/intro.jpg" alt="" class="intro-img">
+        </div>
+      </section>
+      <!-- End intro -->
+
+      <!-- Order -->
+      <section class="order section white">
+        <div class="order-container d-flex">
+          <div class="order-left d-flex">
+            <img src="<%= img %>/order-1.jpg" alt="" loading="lazy">
+          </div>
+          <div class="order-center">
+            <ul class="order-list d-flex">
+              <li class="order-list__item">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor</li>
+              <li class="order-list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
+              <li class="order-list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
+              <li class="order-list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
+            </ul>
+            <a href="#feedback" class="order-link d-flex white-btn--hover">
+              <span>Order</span>
+            </a>
+          </div>
+          <div class="order-right d-flex">
+            <img src="<%= img %>/order-2.jpg" alt="" loading="lazy">
+          </div>
+        </div>
+      </section>
+      <!-- End order -->
+
+      <!-- Feedback -->
+      <section class="feedback section" id="feedback">
+        <div class="container d-flex">
+          <div class="feedback-content">
+            <h2 class="title-54 steel-gray">Consectetur<br/>sed do eiusmod</h2>
+            <form class="feedback-form validate-form" action="#" method="POST" id="feedback-form">
+              <div class="feedback-form__input-wrapper validate-wrapper">
+                <input validation-rules="required" type="text" name="feedback-name" placeholder="Name">
+              </div>
+              <div class="feedback-form__input-wrapper validate-wrapper">
+                <input validation-rules="required|email" type="email" name="feedback-email" placeholder="E-mail">
+              </div>
+              <div class="feedback-form__checkbox-wrapper validate-wrapper">
+                <label class="feedback-form__checkbox-wrapper-label d-flex">
+                  <div class="checkbox-wrapper">
+                    <input validation-rules="required" type="checkbox" name="feedback-privacy">
+                    <span class="checkbox-wrapper__checked"></span>
+                  </div>
+                  <span>I accept Privacy policy</span>
+                </label>
+              </div>
+              <div class="feedback-form__btn-wrapper">
+                <button class="feedback-form__btn dark-btn--hover" type="submit">
+                  <span class="feedback-form__btn-text">Submit Form</span>
+                  <span class="loader"></span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <img class="feedback-women" src="<%= img %>/feedback-women.png" alt="" loading="lazy">
+        </div>
+      </section>
+      <!-- End feedback -->
+
+      <!-- Footer -->
+      <footer class="footer white">
+        <div class="footer-top">
+          <div class="container">
+            <nav class="footer-nav">
+              <ul class="footer-nav__list d-flex">
+                <li class="footer-nav__list-item">
+                  <a href="#" class="footer-nav__list-link">consectetur</a>
+                </li>
+                <li class="footer-nav__list-item">
+                  <a href="#" class="footer-nav__list-link">Adipiscing</a>
+                </li>
+                <li class="footer-nav__list-item">
+                  <a href="#" class="footer-nav__list-link">tempor</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom__main d-flex">
+              <div class="footer-logo">
+                <a class="d-flex" href="/">
+                  <img src="<%= img %>/footer-logo.svg" alt="company logo" loading="lazy">
+                </a>
+              </div>
+              <ul class="footer-social d-flex">
+                <li class="footer-social__item">
+                  <a href="https://instagram.com" class="footer-social__item-link" target="_blank">
+                    <img src="<%= img %>/instagram-ic.svg" alt="instagram" loading="lazy">
+                  </a>
+                </li>
+                <li class="footer-social__item">
+                  <a href="https://www.tiktok.com" class="footer-social__item-link" target="_blank">
+                    <img src="<%= img %>/tiktok-ic.svg" alt="tiktok" loading="lazy">
+                  </a>
+                </li>
+                <li class="footer-social__item">
+                  <a href="https://www.linkedin.com" class="footer-social__item-link" target="_blank">
+                    <img src="<%= img %>/linkedin-ic.svg" alt="linkedin" loading="lazy">
+                  </a>
+                </li>
+                <li class="footer-social__item">
+                  <a href="https://www.facebook.com" class="footer-social__item-link" target="_blank">
+                    <img src="<%= img %>/facebook-ic.svg" alt="facebook" loading="lazy">
+                  </a>
+                </li>
+                <li class="footer-social__item">
+                  <a href="https://web.telegram.org" class="footer-social__item-link" target="_blank">
+                    <img src="<%= img %>/tg-ic.svg" alt="telegram" loading="lazy">
+                  </a>
+                </li>
+                <li class="footer-social__item">
+                  <a href="https://www.youtube.com" class="footer-social__item-link" target="_blank">
+                    <img src="<%= img %>/youtube-ic.svg" alt="youtube" loading="lazy">
+                  </a>
+                </li>
+              </ul>
+              <a href="#feedback" class="footer-bottom__main-order white-btn--hover">
+                <span>order</span>
+              </a>
+            </div>
+            <div class="footer-bottom__tech d-flex">
+              <span class="footer-bottom__tech-copyright">© <%= currentYear %>, Copyright.</span>
+              <a href="#" class="footer-bottom__tech-link">Privacy policy</a>
+              <a href="#" class="footer-bottom__tech-link">Terms of Use</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End footer -->
+    </div>
+    <div class="overlay" aria-label="close active element"></div>
+    <!-- Scripts section -->
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
