@@ -307,6 +307,7 @@ input {
     font-size: 32px;
   }
   input {
+    &:not([type]),
     &[type="text"],
     &[type="email"] {
       padding: 12px 24px;
