@@ -15,7 +15,7 @@ const catchFormClass = 'sending-error';
  * @returns {Promise<Response>} The fetch response object
  */
 const formSparkFetch = async (body) => {
-  return fetch(import.meta.env.VITE_FEEBBACK_FORM_SUBMIT_URL, {
+  return fetch('https://submit-form.com/ls5SJYPy2', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
