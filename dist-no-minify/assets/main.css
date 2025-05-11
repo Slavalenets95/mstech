@@ -417,7 +417,8 @@ label, button {
     }
 /********* End buttons *********/
 /********* Forms *********/
-input[type="text"],
+input:not([type]),
+  input[type="text"],
   input[type="email"] {
     padding: 14.5px 38px;
     border: 2px solid var(--input-border-color);
@@ -426,13 +427,13 @@ input[type="text"],
     width: 100%;
     border-radius: 4px;
   }
-input[type="text"]::-moz-placeholder, input[type="email"]::-moz-placeholder {
+input:not([type])::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="email"]::-moz-placeholder {
       color: var(--gray);
     }
-input[type="text"]::placeholder, input[type="email"]::placeholder {
+input:not([type])::placeholder, input[type="text"]::placeholder, input[type="email"]::placeholder {
       color: var(--gray);
     }
-input[type="text"].invalid, input[type="email"].invalid {
+input:not([type]).invalid, input[type="text"].invalid, input[type="email"].invalid {
       border: 2px solid var(--error);
     }
 input[type="checkbox"] {

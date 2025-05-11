@@ -159,6 +159,7 @@ label, button {
 
 /********* Forms *********/
 input {
+  &:not([type]),
   &[type="text"],
   &[type="email"] {
     padding: 14.5px 38px;
